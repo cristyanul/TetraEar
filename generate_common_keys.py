@@ -63,7 +63,35 @@ for word in common_words:
 
 # MCC/MNC based keys (some networks use these)
 # Common European MCCs
-mccs = ["262", "222", "240", "228", "214"]  # Germany, Italy, Sweden, Switzerland, Spain
+mccs = [
+    "232",  # Austria
+    "206",  # Belgium
+    "284",  # Bulgaria
+    "219",  # Croatia
+    "280",  # Cyprus
+    "230",  # Czechia
+    "238",  # Denmark
+    "248",  # Estonia
+    "244",  # Finland
+    "208",  # France
+    "262",  # Germany
+    "202",  # Greece
+    "216",  # Hungary
+    "272",  # Ireland
+    "222",  # Italy
+    "247",  # Latvia
+    "246",  # Lithuania
+    "270",  # Luxembourg
+    "278",  # Malta
+    "204",  # Netherlands
+    "260",  # Poland
+    "268",  # Portugal
+    "226",  # Romania
+    "231",  # Slovakia
+    "293",  # Slovenia
+    "214",  # Spain
+    "240",  # Sweden
+]
 for mcc in mccs:
     for mnc in range(10):
         key_base = f"{mcc}{mnc:02d}"
